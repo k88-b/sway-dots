@@ -1,0 +1,89 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": "linux",
+    "display": {
+        "separator": "",
+        "key": {
+            "width": 15,
+        }
+    },
+    "modules": [
+        {
+            "key": "╭───────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[31m user",
+            "type": "title",
+            "format": "{1}"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[34m󰟀 host",
+            "type": "host",
+            "format": "{1}"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[32m󰇅 OS",
+            "type": "os",
+            "format": "{2}"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[33m󰅐 uptime",
+            "type": "uptime"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[35m kernel",
+            "type": "kernel"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[36m󰏖 packages",
+            "type": "packages"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[36m󰇄 wm",
+            "type": "wm"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[33m init",
+            "type": "InitSystem",
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[31m term",
+            "type": "terminal"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[32m shell",
+            "type": "shell"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[35m󰋊 disk",
+            "type": "disk",
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[36m󰍛 memory",
+            "type": "memory",
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[32m battery",
+            "type": "battery"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[33m OS Age",
+            "type": "command",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "key": "├───────────┤",
+            "type": "custom"
+        },
+        {
+            "key": "│           │\u001b[11D\u001b[m colors",
+            "type": "colors",
+            "symbol": "circle"
+        },
+        {
+            "key": "╰───────────╯",
+            "type": "custom"
+        }
+    ]
+}

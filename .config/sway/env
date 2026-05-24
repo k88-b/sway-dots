@@ -1,0 +1,15 @@
+#!/bin/sh
+export XDG_CURRENT_DESKTOP="sway"
+export XDG_SESSION_DESKTOP="sway"
+export QT_QPA_PLATFORM=wayland
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export QT_SCALE_FACTOR=1
+export GDK_SCALE=1
+export XCURSOR_SIZE=15
+export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+export ECORE_EVAS_ENGINE=wayland
+export ELM_ENGINE=wayland
+export WINIT_UNIX_BACKEND=wayland
+export _JAVA_AWT_WM_NONREPARENTING=1
+export GTK_ICON_THEME="hicolor"

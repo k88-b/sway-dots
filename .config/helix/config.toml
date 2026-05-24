@@ -1,0 +1,30 @@
+theme = "my_theme"
+
+[editor]
+# line-number = "relative"
+cursorline = true
+color-modes = true
+true-color = true
+completion-replace = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "bar"
+select = "underline"
+
+[editor.indent-guides]
+render = false
+
+[keys.normal.C-x]
+C-s = ":w"
+C-x = ":q"
+C-q = ":q!"
+C-f = "file_picker"
+C-c = ":clipboard-yank"
+C-w = ":wq"
+
+[keys.insert.j]
+k = "normal_mode"

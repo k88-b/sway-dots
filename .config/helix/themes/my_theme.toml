@@ -1,0 +1,125 @@
+"ui.background" = { fg = "white"}
+"ui.background.separator" = { fg = "gray" }  
+"ui.menu" = { fg = "gray" }
+"ui.menu.selected" = { modifiers = ["reversed"] }
+"ui.linenr" = { fg = "light-grey" }
+"ui.linenr.selected" = { fg = "white",  modifiers = ["bold"] }
+"ui.popup" = { fg = "light-gray" }
+"ui.window" = { fg = "black" }
+"ui.selection" = { fg = "gray", modifiers = ["reversed"] }
+
+"comment" = { fg = "gray", modifiers = ["italic"] }
+"ui.statusline" = { fg = "white" }
+"ui.statusline.inactive" = { fg = "gray" }
+"ui.statusline.normal" = { fg = "blue" , modifiers = ["reversed"]}
+"ui.statusline.insert" = { fg = "green" , modifiers = ["reversed"]}
+"ui.statusline.select" = { fg = "magenta" , modifiers = ["reversed"]}
+"ui.help" = { fg = "light-gray" }
+"ui.cursor" = { fg = "light-gray", modifiers = ["reversed", "slow_blink"] }
+"ui.cursor.primary" = { fg = "light-gray",  modifiers = ["reversed", "slow_blink"] }
+"ui.cursor.match" = { fg = "light-yellow", underline = { color = "light-yellow", style = "line" } }
+"ui.cursor.normal" = { fg = "light-gray", modifiers = ["reversed", "slow_blink"] }
+
+"ui.virtual.whitespace" = "gray"
+ui.virtual.indent-guide = "light-gray"
+
+# "diff.plus" = "light-green"
+# "diff.delta" = "yellow"
+# "diff.minus" = "light-red"
+
+# "diagnostic" = { modifiers = ["underlined"] }
+"ui.gutter" = { fg = "gray" }
+# "info" = "light-blue"
+# "hint" = "gray"
+# "debug" = "gray"
+# "warning" = "yellow"
+# "error" = "light-red"
+
+
+"annotation" = { fg = "#CAD3F5" }
+
+"attribute" = { fg = "#A6DA95", modifiers = ["italic"] }
+
+# "comment" = { fg = "#5B6078" }
+"comment.block" = { fg = "#5B6078" }
+"comment.block.documentation" = { fg = "#5B6078" }
+"comment.line" = { fg = "#5B6078" }
+
+"constant" = { fg = "#C6A0F6" }
+"constant.builtin" = { fg = "#C6A0F6" }
+"constant.builtin.boolean" = { fg = "#C6A0F6" }
+"constant.character" = { fg = "#7DC4E4" }
+"constant.character.escape" = { fg = "#F5BDE6" }
+"constant.macro" = { fg = "#C6A0F6" }
+"constant.numeric" = { fg = "#C6A0F6" }
+"constructor" = { fg = "#C6A0F6" }
+
+"definition" = { underline = { color = "#7DC4E4" } }
+
+"diagnostic" = { underline = { color = "#F5A97F", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "#C6A0F6", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "#EED49F", style = "curl" } }
+"diagnostic.error" = { underline = { color = "#ED8796", style = "curl" } }
+"diagnostic.info" = { underline = { color = "#7DC4E4", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"error" = { fg = "#ED8796" }
+"hint" = { fg = "#C6A0F6" }
+"info" = { fg = "#7DC4E4" }
+"warning" = { fg = "#EED49F" }
+
+"diff.delta" = { fg = "#F5A97F" }
+"diff.minus" = { fg = "#ED8796" }
+"diff.plus" = { fg = "#A6DA95" }
+
+"function" = { fg = "#A6DA95" }
+"function.builtin" = { fg = "#A6DA95" }
+"function.call" = { fg = "#A6DA95" }
+"function.macro" = { fg = "#C6A0F6" }
+"function.method" = { fg = "#A6DA95" }
+
+"keyword" = { fg = "#F5BDE6" }
+"keyword.control.conditional" = { fg = "#F5BDE6" }
+"keyword.control.exception" = { fg = "#C6A0F6" }
+"keyword.control.import" = { fg = "#F5BDE6" }
+"keyword.control.repeat" = { fg = "#F5BDE6" }
+"keyword.directive" = { fg = "#A6DA95" }
+"keyword.function" = { fg = "#F5BDE6" }
+"keyword.operator" = { fg = "#F5BDE6" }
+"keyword.return" = { fg = "#F5BDE6" }
+"keyword.storage" = { fg = "#F5BDE6" }
+"keyword.storage.modifier" = { fg = "#F5BDE6" }
+"keyword.storage.type" = { fg = "#7DC4E4", modifiers = ["italic"] }
+
+"label" = { fg = "#7DC4E4" }
+
+"markup.bold" = { fg = "#F5A97F", modifiers = ["bold"] }
+"markup.heading" = { fg = "#C6A0F6", modifiers = ["bold"] }
+"markup.italic" = { fg = "#EED49F", modifiers = ["italic"] }
+"markup.link.text" = { fg = "#F5BDE6" }
+"markup.link.url" = { fg = "#7DC4E4" }
+"markup.list" = { fg = "#7DC4E4" }
+"markup.quote" = { fg = "#EED49F", modifiers = ["italic"] }
+"markup.raw" = { fg = "#CAD3F5" }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+
+"punctuation" = { fg = "#CAD3F5" }
+"punctuation.bracket" = { fg = "#CAD3F5" }
+"punctuation.delimiter" = { fg = "#CAD3F5" }
+"punctuation.special" = { fg = "#F5BDE6" }
+
+"special" = { fg = "#F5BDE6" }
+
+"string" = { fg = "#EED49F" }
+"string.regexp" = { fg = "#ED8796" }
+"string.special" = { fg = "#F5A97F" }
+"string.symbol" = { fg = "#EED49F" }
+
+"tag" = { fg = "#F5BDE6" }
+"tag.attribute" = { fg = "#C6A0F6" }
+"tag.delimiter" = { fg = "#CAD3F5" }
+
+"type" = { fg = "#7DC4E4", modifiers = ["italic"] }
+"type.builtin" = { fg = "#7DC4E4" }
+"type.enum.variant" = { fg = "#CAD3F5", modifiers = ["italic"] }

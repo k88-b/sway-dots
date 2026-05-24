@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+# Использование:
+# wofi-cat file.txt                    → выбрать одну строку
+# wofi-cat -m file.txt                 → множественный выбор
+# wofi-cat --dmenu file.txt            → классический dmenu-режим (одна строка)
+# wofi-cat --help                      → справка
+
+WOIF_ARGS=(--width=800 --height=600 --prompt="Выберите строку")
+
+# Парсим аргументы
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        -m|--multi)
+            WOIF_ARGS+=(--allow-multiple)
+            shift
+            ;;
+        -d|--dmenu)
+            WOIF_ARGS+=(--dmenu)
+            shift
+            ;;
+        -h|--help)
+            echo "Использование: $(basename "$0") [опции] файл.txt"
+            echo "Опции:"
+            echo "  -m, --multi     Разрешить множественный выбор"
+            echo "  -d, --dmenu     Классический dmenu-режим (только одна строка)"
+            echo "  -h, --help      Показать эту справку"
+            exit 0
+            ;;
+        *)
+            FILE="$1"
+            shift
+            ;;
+    esac
+done
+
+# Проверка, передан ли файл
+if [[ -z "$FILE" || ! -f "$FILE" ]]; then
+    echo "Ошибка: укажите существующий txt-файл"
+    echo "Пример: $(basename "$0") ~/notes.txt"
+    exit 1
+fi
+
+# Выводим содержимое файла в wofi и возвращаем выбранное
+cat "$FILE" | wofi "${WOIF_ARGS[@]}" --cache-file=/dev/null
